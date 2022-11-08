@@ -1,0 +1,103 @@
+:root {
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsla(321, 100%, 78%, 0.8);
+    --light-red: hsl(0, 100%, 63%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --pale-blue: hsl(207, 100%, 98%);
+
+    --ff-pop: "Poppins",sans-serif;
+    --ff-open: "Open Sans" , sans-serif;
+  }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: white;
+    line-height: 1.5;
+    color: var(--dark-cyan);
+    font-family: var(--ff-open);
+}
+
+.container{
+    padding: 1.5rem;
+    padding-inline: 2rem;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    width: 100%;
+}
+
+.logo{
+    width: 14rem;
+}
+
+.btn{
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--pink);
+    font-size: 0.9rem;
+    color: var(--pink);
+    box-shadow: 0px -5px 10px -2px hsla(192, 100%, 19%, 0.1);
+    border-radius: 5rem;
+    font-family: var(--ff-open);
+}
+
+.startFree{
+    align-content: center;
+    text-align: center;
+    margin-block: 5rem;
+}
+
+.startFree h2{
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    font-family: var(--ff-pop);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.ha:hover{
+    opacity: 0.8;
+}
+
+.hb:hover{
+    opacity: 0.9;
+}
+.hc:hover{
+    opacity: 0.8;
+}
+.hd:hover{
+    background-color: hsl(322, 84%, 75%);
+}
+
+@media only screen and (max-width: 1000px){
+
+    .logo{
+        width: 9rem;
+    }
+
+    .startFree h2{
+        font-size: 1.8rem;
+    }
+
+    .btn{
+        padding: 0.3rem 1rem;
+    }
+
+}

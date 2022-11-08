@@ -1,0 +1,108 @@
+:root {
+    --pink: hsl(322, 80%, 66%);
+    --light-pink: hsla(321, 100%, 78%, 0.8);
+    --light-red: hsl(0, 100%, 63%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --light-cyan: hsl(190, 57%, 15%);
+    --pale-blue: hsl(207, 100%, 98%);
+    --gray: hsl(0, 0%, 60%);
+
+    --ff-pop: "Poppins",sans-serif;
+    --ff-open: "Open Sans" , sans-serif;
+} 
+
+.img-respb{
+    height: 0;
+    opacity: 0;
+}
+
+.features{   
+    margin: 0rem;
+    width: 100%;
+}
+
+.parta{
+    background-color: var(--pale-blue);
+}
+
+.partb{
+    background-color: var(--pale-blue);
+}
+
+.feat-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 5rem;
+}
+.feat-contentb{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 5rem;
+}
+
+.feat-text{
+    padding: 20rem;
+}
+
+.feat-text h2{
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    font-family: var(--ff-pop);
+    font-weight: 600;
+}
+
+.feat-text p{
+    font-size: 1rem;
+}
+
+.feat-img{
+    max-width: 30rem;
+}
+
+.feat-content > *{
+    flex: 1;
+    padding: 1.5rem;
+}
+.feat-contentb > *{
+    flex: 1;
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .feat-content{
+        flex-direction: column-reverse;
+        padding-inline: 1.6rem;
+    }
+
+    .feat-contentb{
+        flex-direction: column;
+        margin-block: 4rem;
+        padding-inline: 1.6rem;
+    }
+
+    .feat-text h2{
+        font-size: 1.5rem;
+    }
+    
+    .feat-text p{
+        font-size: 0.9rem;
+    }
+
+    .feat-text{
+        /* padding-inline: -5rem; */
+        text-align: center;
+    }
+
+    .img-resp{
+        /* height: 0; */
+        opacity: 0;
+    }
+
+    .img-respb{
+        height: auto;
+        opacity: 1;
+    }
+}
